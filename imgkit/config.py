@@ -17,11 +17,11 @@ class Config(object):
                 self.wkhtmltoimage = subprocess.Popen(['which', 'wkhtmltoimage'],
                                                       stdout=subprocess.PIPE).communicate()[0].strip()
 
-        try:
-            with open(self.wkhtmltoimage) as f:
-                pass
-        except IOError:
-            raise IOError('No wkhtmltoimage executable found: "%s"\n'
-                          'If this file exists please check that this process can '
-                          'read it. Otherwise please install wkhtmltopdf - '
-                          'http://wkhtmltopdf.org' % self.wkhtmltoimage)
+        #try:
+        #    with open(self.wkhtmltoimage) as f:
+        #        pass
+        #except IOError:
+        #    raise IOError('No wkhtmltoimage executable found: "%s"\n'
+        #                  'If this file exists please check that this process can '
+        #                  'read it. Otherwise please install wkhtmltopdf - '
+        #                  'http://wkhtmltopdf.org' % self.wkhtmltoimage)
